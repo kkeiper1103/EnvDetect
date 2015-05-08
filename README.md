@@ -7,9 +7,9 @@ where `EnvDetect::load()` is called from. The file should be named according to 
 Currently Supported Detection Methods:
 ---
 
-- Using Hostname: ( gethostname() )  *default*
-- Using Server Name: ( $_SERVER['SERVER_NAME'] )
-- Using Request Address: ( $_SERVER['REQUEST_ADDR'] )
+- Using Hostname: ( `gethostname()` )  *default*
+- Using Server Name: ( `$_SERVER['SERVER_NAME']` )
+- Using Request Address: ( `$_SERVER['REQUEST_ADDR']` )
 
 Usage:
 ---
@@ -22,6 +22,8 @@ Usage:
     ]);
     
     // will look for .env.local.php in the current directory
+    // and require_once that file. If it doesn't exist, then
+    // an Exception will be thrown
     $env->load();
     
 Envisioned Usage:
