@@ -1,0 +1,13 @@
+{
+    "name": "kkeiper1103/env-detect",
+    "description": "A small library for detecting environments and autoloading configuration files.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Keiper",
+            "email": "kkeiper@wrladv.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
